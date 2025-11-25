@@ -1,8 +1,18 @@
 {
-  "name": "@minimal-kit/starter-vite-ts",
-  "author": "Minimals",
-  "version": "6.0.1",
-  "description": "Vite Starter & TypeScript",
+  "name": "react-spa-vite-template-minimal-starter",
+  "author": "Alejandro Galaz <alejandrogalaz21@gmail.com>",
+  "version": "1.0.0",
+  "description": "A clean and lightweight React SPA starter template using TypeScript, Vite and the Minimal UI Kit.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alejandrogalaz21/react-spa-vite-template-minimal-starter/"
+  },
+  "template": {
+    "name": "@minimal-kit/starter-vite-ts",
+    "author": "Minimals",
+    "version": "6.0.1",
+    "description": "Vite & TypeScript"
+  },
   "private": true,
   "type": "module",
   "scripts": {
