@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "strict": true,
+    "noEmit": true,
+    "allowJs": true,
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "bundler",
+    "noFallthroughCasesInSwitch": true,
+    "useUnknownInCatchVariables": false,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "paths": {
+    "@/*": ["./src/*", "./dist/*", ""],
+    "@/store/*": ["src/store/*"],
+    "@/redux/*": ["src/store/*"],
+    "@/layouts/*": ["src/layouts/*"],
+    "@/services/*": ["src/services/*"],
+    "@/types/*": ["src/types/*"],
+    "@/mock/*": ["src/_mock/*"],
+    "@/actions/*": ["src/actions/*"],
+    "@/assets/*": ["src/assets/*"],
+    "@/auth/*": ["src/auth/*"],
+    "@/components/*": ["src/components/*"],
+    "@/hooks/*": ["src/hooks/*"],
+    "@/locales/*": ["src/locales/*"],
+    "@/pages/*": ["src/pages/*"],
+    "@/routes/*": ["src/routes/*"],
+    "@/sections/*": ["src/sections/*"],
+    "@/theme/*": ["src/theme/*"],
+    "@/utils/*": ["src/utils/*"],
+    "@/features/*": ["src/features/*"],
+    "@/shared/*": ["src/features/shared/*"]
+  },
+  "include": ["**/*.ts", "**/*.tsx", "src/**/*"],
+  "exclude": ["node_modules"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
