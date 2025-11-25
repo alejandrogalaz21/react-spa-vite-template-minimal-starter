@@ -90,4 +90,5 @@ VITE_SUPABASE_ANON_KEY=
 
 ## demo
 
-[demo](http://starter-vite-ts.s3-website-us-east-1.amazonaws.com/)
+[demo](http://starter-vite-ts.s3-website-us-west-2.amazonaws.com/)
+[storybook demo](https://main--612f3f4ed6fdd90008a5f3b3.chromatic.com/)
