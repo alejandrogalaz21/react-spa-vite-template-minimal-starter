@@ -91,4 +91,4 @@ VITE_SUPABASE_ANON_KEY=
 ## demo
 
 [demo](http://starter-vite-ts.s3-website-us-west-2.amazonaws.com/)
-[storybook demo](https://main--612f3f4ed6fdd90008a5f3b3.chromatic.com/)
+[storybook demo](https://alejandrogalaz21.github.io/react-spa-vite-template-minimal-starter/)

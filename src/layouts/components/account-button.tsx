@@ -16,7 +16,7 @@ export type AccountButtonProps = IconButtonProps & {
   displayName: string;
 };
 
-export function AccountButton({ open, photoURL, displayName, sx, ...other }: AccountButtonProps) {
+export function AccountButton({ open: _open, photoURL, displayName, sx, ...other }: AccountButtonProps) {
   const theme = useTheme();
 
   const renderFallback = (
