@@ -33,6 +33,7 @@ export type AlertType = 'success' | 'error' | 'info' | 'warning';
  */
 export type Alert = {
   id: string;
+  title?: string;
   message: string;
   type: AlertType;
 };
