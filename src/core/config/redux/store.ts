@@ -6,6 +6,7 @@ import { createEpicMiddleware } from 'redux-observable';
 
 import rootEpic from './rootEpic';
 import rootReducer from './rootReducer';
+import { setStore } from './storeAccessor';
 
 // Create the epic middleware
 const epicMiddleware: EpicMiddleware<Action, Action, any, any> = createEpicMiddleware();
@@ -23,18 +24,6 @@ const store = configureStore({
 // Run the root epic
 epicMiddleware.run(rootEpic);
 
-/**
- * Type for the dispatch function of the store.
- *
- * @typedef {typeof store.dispatch} AppDispatch
- */
-export type AppDispatch = typeof store.dispatch;
-
-/**
- * Type for the root state of the store.
- *
- * @typedef {ReturnType<typeof store.getState>} RootState
- */
-export type state = ReturnType<typeof store.getState>;
+setStore(store);
 
 export default store;

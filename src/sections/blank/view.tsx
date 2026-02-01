@@ -1,4 +1,4 @@
-import type { state } from 'src/redux/store';
+import type { ReduxState } from '@/core/types';
 
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 import { varAlpha } from 'src/theme/styles';
-import { requestStart } from 'src/redux/app/app-slice';
+import { requestStart } from '@/core/config/redux/app/app-slice';
 import { DashboardContent } from 'src/layouts/dashboard';
 import { TodosList } from 'src/features/todos/TodosList';
 
@@ -17,7 +17,7 @@ type Props = {
 
 export function BlankView({ title = 'Blank' }: Props) {
   const dispatch = useDispatch();
-  const { data, loading } = useSelector((state: state) => state.app);
+  const { data, loading } = useSelector((state: ReduxState) => state.app);
 
   useEffect(() => {
     if (!loading && data.results.length === 0) {

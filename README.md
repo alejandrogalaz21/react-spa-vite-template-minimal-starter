@@ -87,6 +87,10 @@ VITE_SUPABASE_URL=
 VITE_SUPABASE_ANON_KEY=
 
 ```
+## Architecture Guidelines
+
+For detailed rules on folder structure, feature separation, and shared systems (alerts, toasts, modals, etc.), see [FRONTEND_ARCHITECTURE.md](./FRONTEND_ARCHITECTURE.md)
+
 
 ## demo
 

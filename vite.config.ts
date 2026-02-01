@@ -37,6 +37,7 @@ export default defineConfig({
         replacement: path.join(process.cwd(), 'src/$1'),
       },
       { find: '@/', replacement: path.resolve(__dirname, 'src', '') },
+      { find: '@/core', replacement: path.resolve(__dirname, 'src/core') },
       { find: '@/store', replacement: path.resolve(__dirname, 'src/store') },
       { find: '@/redux', replacement: path.resolve(__dirname, 'src/redux') },
       { find: '@/layouts', replacement: path.resolve(__dirname, 'src/layouts') },

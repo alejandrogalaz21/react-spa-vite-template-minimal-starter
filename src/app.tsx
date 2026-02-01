@@ -8,7 +8,7 @@ import { Router } from 'src/routes/sections';
 
 import { useScrollToTop } from 'src/hooks/use-scroll-to-top';
 
-import store from 'src/redux/store';
+import store from '@/core/config/redux/store';
 import { ThemeProvider } from 'src/theme/theme-provider';
 
 import { ProgressBar } from 'src/components/progress-bar';
