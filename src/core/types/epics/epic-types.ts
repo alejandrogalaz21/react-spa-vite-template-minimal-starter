@@ -10,6 +10,11 @@ import type { ReduxState } from '../redux/redux-types';
 import type { AppActions } from '../redux/app-actions.types';
 
 /**
+ * Single action type used across epics when a concrete action union is needed.
+ */
+export type AppAction = AppActions | UnknownAction;
+
+/**
  * Type for the dependencies injected into epics.
  *
  * @typedef {Object} EpicDependencies

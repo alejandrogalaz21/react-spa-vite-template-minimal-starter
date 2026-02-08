@@ -1,6 +1,6 @@
 // src/core/config/axios/apiClient.ts
 
-import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
+import axios, { type AxiosInstance } from 'axios';
 import { CONFIG } from 'src/config-global';
 
 /**

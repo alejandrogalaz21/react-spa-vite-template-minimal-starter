@@ -27,3 +27,7 @@ epicMiddleware.run(rootEpic);
 setStore(store);
 
 export default store;
+
+// Export commonly used types so other modules can import them as types-only
+export type RootState = ReturnType<typeof rootReducer>;
+export type AppDispatch = typeof store.dispatch;

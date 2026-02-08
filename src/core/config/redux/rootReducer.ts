@@ -5,7 +5,9 @@ import { offlineQueueSliceReducer } from './app/offlineQueue/offlineQueue.slice'
 
 import axiosInstance from '@/core/config/axios/apiClient';
 
-const epicDependencies: any = {
+// Not currently used directly here but kept for potential injection/configuration.
+// Prefix with underscore to avoid unused-var lint warning.
+const _epicDependencies: any = {
   api: axiosInstance,
 };
 

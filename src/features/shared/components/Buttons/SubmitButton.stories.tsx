@@ -1,5 +1,5 @@
 // src/features/shared/components/Buttons/SubmitButton.stories.tsx
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { SubmitButton } from './SubmitButton';
 import { Box } from '@mui/material';
 

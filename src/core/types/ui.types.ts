@@ -1,4 +1,6 @@
 // src/core/types/ui.types.ts
+// `C` is used with `typeof C.SOMETHING` in type positions and requires a value import.
+// eslint-disable-next-line @typescript-eslint/consistent-type-imports
 import * as C from './../constants';
 
 /**

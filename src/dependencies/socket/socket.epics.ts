@@ -7,11 +7,11 @@
 import { merge, map, materialize, scan, delayWhen, timer, tap, filter, retryWhen } from 'rxjs';
 import { connected$, disconnected$, connectError$ } from './socket.streams';
 import { socketConnected, socketDisconnected, socketError, socketRetry } from './socket.slice';
-import { flushQueue } from '@/offlineQueue/offlineQueue.slice';
+import { flushQueue } from '@/core/config/redux/app/offlineQueue/offlineQueue.slice';
 
 import type { Observable } from 'rxjs';
 
-import type { AppEpic, AppAction } from '@types';
+import type { AppEpic, AppAction } from '@/core/types/epics/epic-types';
 
 /**
  * 🧠 Socket lifecycle epic

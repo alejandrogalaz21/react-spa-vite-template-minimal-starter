@@ -5,12 +5,12 @@ import { combineEpics } from 'redux-observable';
 
 import { appEpics } from './app/app-epic';
 
-import type { state } from './store';
+import type { RootState } from './store';
 
-const app: Epic<Action, Action, state, any>[] = appEpics as unknown as Epic<
+const app: Epic<Action, Action, RootState, any>[] = appEpics as unknown as Epic<
   Action,
   Action,
-  state,
+  RootState,
   any
 >[];
 

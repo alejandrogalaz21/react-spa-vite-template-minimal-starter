@@ -1,9 +1,11 @@
 // src/offlineQueue/offlineQueue.epics.ts
 import { filter, withLatestFrom, mergeMap, from } from 'rxjs';
-import { socketClient } from '@/socket/SocketClient';
+import { socketClient } from '@/core/config/socket/SocketClient';
 import { queueRemove } from './offlineQueue.slice';
 
-import type { AppEpic } from '@types';
+import type { AppEpic } from '@/core/types/epics/epic-types';
+
+// explicit return type for clarity; action$ parameter typed implicitly by AppEpic
 
 /**
  * 📦 Offline queue flush epic

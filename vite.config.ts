@@ -59,6 +59,17 @@ export default defineConfig({
       { find: '@/shared', replacement: path.resolve(__dirname, 'src/features/shared') },
     ],
   },
-  server: { port: PORT, host: true },
+  server: {
+    port: PORT,
+    host: true,
+    proxy: {
+      '/api': {
+        target: env.VITE_API_PROXY_TARGET || 'http://localhost:3000/api/v1',
+        changeOrigin: true,
+        secure: false,
+        rewrite: (p) => p.replace(/^\/api/, ''),
+      },
+    },
+  },
   preview: { port: PORT, host: true },
 });

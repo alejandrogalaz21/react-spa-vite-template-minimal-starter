@@ -1,24 +1,17 @@
 // src/types/redux/redux-types.ts
 
-// Import the configured Redux store instance
-import store from '@/core/config/redux/store';
-
-// Import the rootReducer that combines all slices/reducers in the app
-import rootReducer from '@/core/config//redux/rootReducer';
+// Import types exported from the configured store
+import type { RootState, AppDispatch } from '@/core/config/redux/store';
 
 /**
  * Type for the Redux state object.
- *
- * @typedef {ReturnType<typeof store.getState>} RootState
  */
-export type ReduxState = ReturnType<typeof rootReducer>;
+export type ReduxState = RootState;
 
 /**
  * Type for the Redux dispatch function.
- *
- * @typedef {typeof store.dispatch} AppDispatch
  */
-export type AppDispatch = typeof store.dispatch;
+export type AppDispatchType = AppDispatch;
 
 /**
  * Type to extract action creators from a given slice.

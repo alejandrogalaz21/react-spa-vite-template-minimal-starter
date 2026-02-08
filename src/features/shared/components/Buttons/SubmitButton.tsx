@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, CircularProgress, ButtonProps } from '@mui/material';
+import { Button, CircularProgress } from '@mui/material';
+import type { ButtonProps } from '@mui/material';
 
 interface SubmitButtonProps extends ButtonProps {
   isSubmitting: boolean;
